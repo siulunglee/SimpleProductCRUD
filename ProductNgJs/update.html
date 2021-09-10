@@ -1,0 +1,57 @@
+<!-- Edit Item Form -->
+<div id="formEditItemModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">Edit Item: {{Products}}</div>
+      <div class="modal-body">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+              Sku<br />
+              <input type="text" ng-model="Sku" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Name<br />
+              <input type="text" ng-model="Name" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Price<br />
+              <input type="text" ng-model="Price" />
+            </td>
+          </tr>
+          <td>
+            Description:<br />
+            <input type="text" ng-model="Description" />
+          </td>
+
+          <tr>
+            <td>
+              <br />
+              <button
+                type="button"
+                class="btn btn-primary"
+                ng-click="Save()"
+                data-dismiss="modal"
+              >
+                Save
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
